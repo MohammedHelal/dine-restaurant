@@ -1,0 +1,63 @@
+/****start of footer****/
+.footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  padding: 50px 11.45vw;
+  background-color: black;
+  color: white;
+}
+
+.footer > img {
+  width: 100px;
+}
+
+.footer > div > h4 {
+  font-size: 16px;
+  font-weight: 300;
+  margin: 10px 0;
+}
+
+@media screen and (max-width: 768px) {
+  .footer {
+    flex-wrap: wrap;
+  }
+
+  .footer > div:first-of-type {
+    width: 287px;
+  }
+
+  .footer > div:last-of-type {
+    margin-top: 20px;
+    margin-left: auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .footer {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .footer > div {
+    text-align: center;
+    margin-top: 30px;
+  }
+
+  .footer > div:last-of-type {
+    margin: 0;
+    margin-top: 30px;
+  }
+}
+
+@media screen and (max-width: 375px) {
+  .footer > div:first-of-type {
+    width: auto;
+  }
+
+  .footer > div > h4 {
+    font-size: 12px;
+    line-height: 25px;
+  }
+}

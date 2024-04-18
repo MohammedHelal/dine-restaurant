@@ -1,0 +1,52 @@
+.little-highlights {
+  display: flex;
+  align-items: center;
+  width: 550px;
+  padding: 24px 0 10px;
+  border-bottom: 1px solid var(--color-shuttle-gray);
+}
+
+.little-highlights > div {
+  position: relative;
+}
+
+.little-highlights > div > .highlights-divide {
+  position: absolute;
+  top: 8px;
+  left: 90px;
+  clip: rect(0px, 71px, 7px, 38px);
+}
+
+.little-highlights-text {
+  padding-top: 5px;
+  margin-left: 50px;
+}
+
+.little-highlights-text > h3 {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.little-highlights-text > p {
+  font-size: 16px;
+}
+
+@media screen and (max-width: 1024px) {
+  .little-highlights {
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .little-highlights {
+    align-items: center;
+    flex-direction: column;
+    width: 90vw;
+    text-align: center;
+  }
+
+  .little-highlights-text {
+    margin-top: 20px;
+    margin-left: 0;
+  }
+}

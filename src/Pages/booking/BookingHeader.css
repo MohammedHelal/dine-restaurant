@@ -1,0 +1,72 @@
+/*Header styles*/
+.booking-header-wrapper {
+  width: 100vw;
+  height: calc((100vw * 5) / 12);
+  position: relative;
+  background-image: url("./src/assets/images/booking/hero-bg-desktop@2x.jpg");
+  background-size: 100% 100%;
+}
+
+.booking-header-text {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  color: white;
+  background-color: transparent;
+  width: 528px;
+  height: 70%;
+  padding-right: 15px;
+  padding-top: 65px;
+  margin-left: 11.45vw;
+}
+
+.booking-header-text img {
+  width: 100px;
+}
+
+/*****end of header style******/
+
+@media screen and (max-width: 1024px) {
+  .booking-header-wrapper {
+    width: 100vw;
+    height: calc((100vw * 25) / 32);
+    position: relative;
+    background-image: url("./src/assets/images/booking/hero-bg-tablet@2x.jpg");
+    background-size: 100% 100%;
+  }
+
+  .booking-header-text img {
+    margin: 0 auto;
+  }
+
+  .booking-header-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .booking-header-wrapper {
+    width: 100vw;
+    height: calc((100vw * 8) / 5);
+    position: relative;
+    background-image: url("./src/assets/images/booking/hero-bg-mobile@2x.jpg");
+    background-size: 100% 100%;
+  }
+  .booking-header-text {
+    text-align: center;
+    margin: 0 auto;
+  }
+
+  .booking-header-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: white;
+    background-color: transparent;
+    width: 90vw;
+    height: 50%;
+    padding-right: 0;
+    padding-top: 50px;
+  }
+}
