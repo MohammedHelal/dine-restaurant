@@ -3,7 +3,7 @@
   width: 100vw;
   height: calc((100vw * 5) / 12);
   position: relative;
-  background-image: url("./src/assets/images/booking/hero-bg-desktop@2x.jpg");
+  background-image: url("../../assets/images/booking/hero-bg-desktop@2x.jpg");
   background-size: 100% 100%;
 }
 
@@ -31,7 +31,7 @@
     width: 100vw;
     height: calc((100vw * 25) / 32);
     position: relative;
-    background-image: url("./src/assets/images/booking/hero-bg-tablet@2x.jpg");
+    background-image: url("../../assets/images/booking/hero-bg-tablet@2x.jpg");
     background-size: 100% 100%;
   }
 
@@ -50,7 +50,7 @@
     width: 100vw;
     height: calc((100vw * 8) / 5);
     position: relative;
-    background-image: url("./src/assets/images/booking/hero-bg-mobile@2x.jpg");
+    background-image: url("../../assets/images/booking/hero-bg-mobile@2x.jpg");
     background-size: 100% 100%;
   }
   .booking-header-text {

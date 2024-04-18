@@ -1,12 +1,13 @@
 import "./Header.css";
 import PropTypes from "prop-types";
+import logo from "../../assets/images/logo.svg";
 
 function Header({ setCurrentPage }) {
   return (
     <header>
       <article className="header-text-wrapper">
         <div className="header-text">
-          <img src="./src/assets/images/logo.svg" alt="Logo" />
+          <img src={logo} alt="Logo" />
           <div>
             <h1>Exquisite dining since 1989</h1>
             <p>

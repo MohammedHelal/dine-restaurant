@@ -2,6 +2,18 @@ import "./Enjoy.css";
 import useScreenSize from "../../useHooks/useScreenSize";
 import FeatureDescription from "../../components/FeatureDescription";
 
+import enjoyable from "../../assets/images/homepage/enjoyable-place-desktop@2x.jpg";
+import enjoyableTablet from "../../assets/images/homepage/enjoyable-place-tablet@2x.jpg";
+import enjoyableMobile from "../../assets/images/homepage/enjoyable-place-mobile@2x.jpg";
+import local from "../../assets/images/homepage/locally-sourced-desktop@2x.jpg";
+import localTablet from "../../assets/images/homepage/locally-sourced-tablet@2x.jpg";
+import localMobile from "../../assets/images/homepage/locally-sourced-mobile@2x.jpg";
+
+import curveBottomRight from "../../assets/images/patterns/pattern-curve-bottom-right.svg";
+import curveTopRight from "../../assets/images/patterns/pattern-curve-top-right.svg";
+import curveTopLeft from "../../assets/images/patterns/pattern-curve-top-left.svg";
+import lines from "../../assets/images/patterns/pattern-lines.svg";
+
 function EnjoyAndLocal() {
   const screenSize = useScreenSize();
 
@@ -10,21 +22,17 @@ function EnjoyAndLocal() {
       <article className="relative-container">
         <img
           className="enjoy-img"
-          src={`./src/assets/images/homepage/enjoyable-place-${
+          src={
             screenSize.width > 1024
-              ? "desktop"
+              ? enjoyable
               : screenSize.width >= 768
-              ? "tablet"
-              : "mobile"
-          }@2x.jpg`}
+              ? enjoyableTablet
+              : enjoyableMobile
+          }
         />
         <img
           className="enjoy-curve"
-          src={`./src/assets/images/patterns/${
-            screenSize.width >= 1024
-              ? "pattern-curve-top-right"
-              : "pattern-curve-bottom-right"
-          }.svg`}
+          src={screenSize.width >= 1024 ? curveTopRight : curveBottomRight}
         />
       </article>
       <FeatureDescription
@@ -43,24 +51,18 @@ function EnjoyAndLocal() {
       />
       <article className="relative-container">
         <img
-          src={`./src/assets/images/homepage/locally-sourced-${
+          src={
             screenSize.width > 1024
-              ? "desktop"
+              ? local
               : screenSize.width >= 768
-              ? "tablet"
-              : "mobile"
-          }@2x.jpg`}
+              ? localTablet
+              : localMobile
+          }
           alt=""
           className="local-img"
         />
-        <img
-          className="local-curve"
-          src="./src/assets/images/patterns/pattern-curve-top-left.svg"
-        />
-        <img
-          className="local-pattern"
-          src="./src/assets/images/patterns/pattern-lines.svg"
-        />
+        <img className="local-curve" src={curveTopLeft} />
+        <img className="local-pattern" src={lines} />
       </article>
     </section>
   );

@@ -1,9 +1,10 @@
 import "./Footer.css";
+import logo from "../assets/images/logo.svg";
 
 function Footer() {
   return (
     <footer className="footer">
-      <img src="./src/assets/images/logo.svg" alt="Logo" />
+      <img src={logo} alt="Logo" />
       <div>
         <h4>Marthwaite, Sedbergh</h4>
         <h4>Cumbria</h4>

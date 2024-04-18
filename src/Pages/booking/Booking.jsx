@@ -6,6 +6,8 @@ import Modal from "../../components/Modal";
 import PropTypes from "prop-types";
 import "./Booking.css";
 
+import check from "../../assets/images/success-green-check-mark-icon.svg";
+
 function Booking({ setCurrentPage }) {
   const [openModal, setOpenModal] = useState(false);
   const [closeModal, setCloseModal] = useState(false);
@@ -25,7 +27,7 @@ function Booking({ setCurrentPage }) {
       <main>
         <BookingMain setOpenModal={setOpenModal} setFormData={setFormData} />
         <Modal open={openModal} close={closeModal}>
-          <img src="./src/assets/images/success-green-check-mark-icon.svg" />
+          <img src={check} alt="Success check mark" />
           <h2>Thank You {formData.name},</h2>
           <p>
             Your reservation at{" "}

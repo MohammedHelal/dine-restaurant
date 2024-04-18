@@ -1,10 +1,12 @@
 import PropTypes from "prop-types";
 import "./FeatureDescription.css";
 
+import divide from "../assets/images/patterns/pattern-divide.svg";
+
 export default function FeatureDescription({ heading, para, classes }) {
   return (
     <article className={"description-flex " + classes}>
-      <img src="./src/assets/images/patterns/pattern-divide.svg" />
+      <img src={divide} />
       <h2>{heading}</h2>
       <p>{para}</p>
     </article>

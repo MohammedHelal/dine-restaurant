@@ -2,7 +2,7 @@
 header {
   width: 100vw;
   height: calc((100vw * 41) / 72);
-  background-image: url("./src/assets/images/homepage/hero-bg-desktop.jpg");
+  background-image: url("../../assets/images/homepage/hero-bg-desktop.jpg");
   background-size: 100%;
   position: relative;
 }
@@ -45,7 +45,7 @@ header > img {
 
 @media screen and (max-width: 1024px) {
   header {
-    background-image: url("./src/assets/images/homepage/hero-bg-tablet.jpg");
+    background-image: url("../../assets/images/homepage/hero-bg-tablet.jpg");
     height: calc((100vw * 31) / 24);
   }
 
@@ -70,7 +70,7 @@ header > img {
 
 @media screen and (max-width: 600px) {
   header {
-    background-image: url("./src/assets/images/homepage/hero-bg-mobile.jpg");
+    background-image: url("../../assets/images/homepage/hero-bg-mobile.jpg");
     height: calc((100vw * 283) / 142);
   }
 

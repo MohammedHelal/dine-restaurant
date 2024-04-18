@@ -1,10 +1,11 @@
 import "./BookingHeader.css";
+import logo from "../../assets/images/logo.svg";
 
 function BookingHeader() {
   return (
     <header className="booking-header-wrapper">
       <div className="booking-header-text">
-        <img src="./src/assets/images/logo.svg" alt="Logo" />
+        <img src={logo} alt="Logo" />
         <div>
           <h1>Reservations</h1>
           <p>

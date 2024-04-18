@@ -4,7 +4,7 @@
   align-items: center;
   margin-top: 150px;
   padding: 50px 11.45vw;
-  background-image: url("./src/assets/images/homepage/ready-bg-desktop@2x.jpg");
+  background-image: url("../../assets/images/homepage/ready-bg-desktop@2x.jpg");
   background-repeat: none;
   background-size: 100% 100%;
 }
@@ -26,7 +26,7 @@
     align-items: center;
     margin-top: 50px;
     padding: 50px 11.45vw;
-    background-image: url("./src/assets/images/homepage/ready-bg-tablet@2x.jpg");
+    background-image: url("../../assets/images/homepage/ready-bg-tablet@2x.jpg");
     background-repeat: none;
     background-size: 100% 100%;
   }
