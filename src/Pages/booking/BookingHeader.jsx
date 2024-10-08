@@ -1,11 +1,12 @@
 import "./BookingHeader.css";
 import logo from "../../assets/images/logo.svg";
+import PropTypes from "prop-types";
 
-function BookingHeader() {
+function BookingHeader({ setCurrentPage }) {
   return (
     <header className="booking-header-wrapper">
       <div className="booking-header-text">
-        <img src={logo} alt="Logo" />
+        <img src={logo} alt="Logo" onClick={() => setCurrentPage("home")} />
         <div>
           <h1>Reservations</h1>
           <p>
@@ -18,5 +19,9 @@ function BookingHeader() {
     </header>
   );
 }
+
+BookingHeader.propTypes = {
+  setCurrentPage: PropTypes.func.isRequired,
+};
 
 export default BookingHeader;

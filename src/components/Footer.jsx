@@ -1,10 +1,11 @@
 import "./Footer.css";
 import logo from "../assets/images/logo.svg";
+import PropTypes from "prop-types";
 
-function Footer() {
+function Footer({ setCurrentPage }) {
   return (
     <footer className="footer">
-      <img src={logo} alt="Logo" />
+      <img src={logo} alt="Logo" onClick={() => setCurrentPage("home")} />
       <div>
         <h4>Marthwaite, Sedbergh</h4>
         <h4>Cumbria</h4>
@@ -18,5 +19,9 @@ function Footer() {
     </footer>
   );
 }
+
+Footer.propTypes = {
+  setCurrentPage: PropTypes.func.isRequired,
+};
 
 export default Footer;

@@ -16,7 +16,7 @@ function Home({ setCurrentPage }) {
         <Family setCurrentPage={setCurrentPage} />
         <Reservation setCurrentPage={setCurrentPage} />
       </main>
-      <Footer />
+      <Footer setCurrentPage={setCurrentPage} />
     </>
   );
 }

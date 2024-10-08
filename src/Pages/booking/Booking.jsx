@@ -23,7 +23,7 @@ function Booking({ setCurrentPage }) {
 
   return (
     <>
-      <BookingHeader />
+      <BookingHeader setCurrentPage={setCurrentPage} />
       <main>
         <BookingMain setOpenModal={setOpenModal} setFormData={setFormData} />
         <Modal open={openModal} close={closeModal}>
@@ -60,7 +60,7 @@ function Booking({ setCurrentPage }) {
           </button>
         </Modal>
       </main>
-      <Footer />
+      <Footer setCurrentPage={setCurrentPage} />
     </>
   );
 }
